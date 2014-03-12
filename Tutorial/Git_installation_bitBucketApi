@@ -1,0 +1,107 @@
+How To Install Git on Ubuntu
+
+1.installing via Apt-get
+     sudo apt-get install git-core
+
+or
+
+2.Install git from source 
+    sudo apt-get update
+    sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential
+
+    Download the latest version of git 
+
+    wget https://git-core.googlecode.com/files/git-1.8.1.2.tar.gz
+
+    Untar the file
+
+    tar -zxf git-1.8.1.2.tar.gz
+    cd git-1.8.1.2
+
+    
+If you want to do a global install, install it once as yourself and once as root, using the sudo prefix: 
+
+make prefix=/usr/local all
+sudo make prefix=/usr/local install
+ 
+ 
+Updating the git in future
+
+git clone git://git.kernel.org/pub/scm/git/git.git
+
+
+
+
+
+How to setup git 
+
+
+Opening it following a fresh Git install would reveal a completely blank page:
+sudo nano ~/.gitconfig
+
+You can use the follow commands to add in the required information.
+git config --global user.name "NewUser"
+git config --global user.email newuser@example.com
+
+
+
+
+
+
+
+Bit bucket api
+
+The Bitbucket REST API allows third-party application developers the means for writing applications for the Bitbucket service. 
+ REST API is based on open standards, you can use any web development language to access the API.
+ Using the API, users can sign in and grant your application the right to make calls on their behalf.
+Application can access Bitbucket resources such as an individual (or team) account, repositories, and aspects of these resources such as changesets or comments. 
+
+
+Supported endpoints and their resources
+
+Users
+
+         account - Gets information related to an account.
+        email     - Manages the email address associated with an account.
+         Invitation -Manages the invitations sent by an account.
+        Oauth     -Manages the consumers associated with an account
+
+
+
+
+
+Repositories
+
+           Changeset        
+Manage changesets for a repository.
+          deploy-keys         
+Manage ssh keys for deploying product builds.
+           events       
+Track events on a public repository.
+          Folloers        
+Lists the accounts following a repository.
+           issues       
+Manage an issue tracker and the issues associated with it.
+           Links
+         
+Manage integrations with JIRA, Bamboo, and custom link resources.
+pul lrequests
+Manage the comments and likes associated with pull request comments.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
