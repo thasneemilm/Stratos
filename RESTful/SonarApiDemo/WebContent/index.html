@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Sonar API Webapp using jQuery Demo</title>
+  <!-- meta name="author" content="Jake Rocheleau">
+  <link rel="shortcut icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
+  <link rel="icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico" -->
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/sonar-call.js"></script>
+</head>
+
+<body>
+  <div id="w">
+    <h1>Simple Sonar API Webapp</h1>
+    <p>Enter a single Sonarqube Project Key below and click the button to display line of code info via XML.</p>
+    
+    <input type="text" name="ghusername" id="ghusername" placeholder="Sonarqube Project key...">
+    
+    <a href="#" id="ghsubmitbtn">Pull Quality Data</a>
+    
+    <div id="ghapidata" class="clearfix"></div>
+  </div>
+</body>
+</html>
