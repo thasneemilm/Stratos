@@ -29,7 +29,7 @@ public class SearchRepo {
 	static String classconstraint1 = "class";
 	static String classconstraint2 = "extends";
 	
-	
+	 
 	@GET
     @Path("/searchservice")
     @Consumes( MediaType.APPLICATION_JSON)
@@ -43,7 +43,7 @@ public class SearchRepo {
     		
     		displayDirectoryContents(currentDir);
     		
-    		// see all java files
+    		//  see all java files
     		for(File f: allJavaFiles){
     			System.out.println(f.getName());
     		}
